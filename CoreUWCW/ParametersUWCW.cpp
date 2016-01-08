@@ -1,0 +1,45 @@
+#include "ParametersUWCW.h"
+
+
+UWCW_FLOAT PTHETA[] = 
+{	-90, -89, -88, -87, -86, -85, -84, -83, -82, -81,
+	-80, -79, -78, -77, -76, -75, -74, -73, -72, -71,
+	-70, -69, -68, -67, -66, -65, -64, -63, -62, -61,
+	-60, -59, -58, -57, -56, -55, -54, -53, -52, -51,
+	-50,
+	50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+	60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+	70, 71, 72, 73, 74, 75, 76, 77, 78, 79,
+	80, 81, 82, 83, 84, 85, 86, 87, 88, 89	};
+UWCW_INT PTHETA_LEN = 81;
+UWCW_INT PTHETA_END = 50;
+
+
+UWCW_FLOAT THETA[] = 
+{	-90, -89, -88, -87, -86, -85, -84, -83, -82, -81,
+	-80, -79, -78, -77, -76, -75, -74, -73, -72, -71,
+	-70, -69, -68, -67, -66, -65, -64, -63, -62, -61,
+	-60,
+	60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+	70, 71, 72, 73, 74, 75, 76, 77, 78, 79,
+	80, 81, 82, 83, 84, 85, 86, 87, 88, 89	};
+UWCW_INT THETA_LEN = 61;
+
+
+UWCW_FLOAT LOWBOUND_PCT = 68;
+
+UWCW_FLOAT TH_PCT  = 97.0;
+UWCW_INT HGATE_FACTOR = 12;
+
+UWCW_FLOAT TH_GATE = -72;
+UWCW_INT SLICE_HEIGHT = 128;
+UWCW_INT SLICE_WIDTH = 64;
+
+UWCW_INT wFactor = 1;
+UWCW_INT hFactor = 1;
+
+UWCW_INT THETA_NUM_PARTICLES = 80;
+UWCW_FLOAT THETA_VARIANCE = 0.5;
+UWCW_INT THETA_SIDE = 5;
+
+UWCW_FLOAT RHO_VARIANCE = 2;
