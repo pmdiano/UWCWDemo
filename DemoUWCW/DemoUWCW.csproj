@@ -86,7 +86,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreUWCW\CoreUWCW.vcxproj">
+      <Project>{c8d105c8-20bf-4c28-af29-38960cd585e2}</Project>
+      <Name>CoreUWCW</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y $(TargetDir)* $(SolutionDir)$(ConfigurationName)\
+copy /Y $(ProjectDir)uwcw_svm.dat $(SolutionDir)$(ConfigurationName)\
+copy /Y $(ProjectDir)libfftw3-3.dll $(SolutionDir)$(ConfigurationName)\</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
